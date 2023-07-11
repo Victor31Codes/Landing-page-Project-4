@@ -1,0 +1,465 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --pinkClr: hsl(322, 100%, 66%);
+  --veryPaleCyanClr: hsl(193, 100%, 96%);
+  --veryDarkCyanClr: hsl(192, 100%, 9%);
+  --grayishBlueClr: hsl(208, 11%, 55%);
+  --openSansFont: "Open Sans", sans-serif;
+  --poppinsFont: "Poppins", sans-serif;
+  --whiteSupportClr: #fafafa;
+}
+
+body {
+  font-family: var(--openSansFont);
+  overflow-x: hidden;
+}
+
+::selection {
+  color: var(--pinkClr);
+}
+.nav_container {
+  width: 100vw;
+  height: 5rem;
+  background-color: var(--veryPaleCyanClr);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 2rem;
+  gap: 1rem;
+}
+
+#first_logo {
+  width: 8rem;
+}
+
+#TIF_btn {
+  width: 7rem;
+  height: 2rem;
+  background-color: var(--whiteSupportClr);
+  border: none;
+  border-radius: 2rem;
+  box-shadow: 0px 1px 2px 1px #a8a4a4;
+}
+
+#TIF_btn a {
+  text-decoration: none;
+  color: #121212;
+  font-family: var(--openSansFont);
+  font-weight: 600;
+}
+
+.headings {
+  font-family: var(--poppinsFont);
+}
+
+.main_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5rem;
+  background-color: var(--whiteSupportClr);
+  position: relative;
+  padding-bottom: 5rem;
+}
+/* .imgDesktop_container {
+  background-image: url(images/bg-hero-mobile.svg);
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+} */
+
+/* .imgDesktop_container .imgDesktop {
+  width: 100%;
+  height: 100%;
+} */
+
+.buildCommunity_container {
+  background-image: url(images/bg-hero-mobile.svg);
+  background-size: cover;
+  background-position: center;
+  background-color: var(--veryPaleCyanClr);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-top: 2rem;
+  justify-content: space-evenly;
+  padding-inline: 3rem;
+  text-align: center;
+}
+
+.text_buildComm_container {
+  display: flex;
+  width: 77vw;
+  height: 100vh;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.mockup_img_container {
+  display: flex;
+  justify-content: start;
+  width: 77vw;
+  height: 100vh;
+}
+.mockup_img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+#first_paragraph {
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.btn_container {
+  display: flex;
+  justify-content: center;
+}
+
+.pink_btns {
+  width: 15rem;
+  height: 2.5rem;
+  background-color: var(--pinkClr);
+  border: none;
+  border-radius: 2rem;
+}
+
+.pink_btns a {
+  font-family: var(--openSansFont);
+  text-decoration: none;
+  color: var(--veryPaleCyanClr);
+  font-weight: 700;
+}
+
+.growTogether_container,
+.flowingConversations_container,
+.yourUsers_container {
+  width: 80vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-inline: 0.5rem;
+  gap: 2rem;
+  text-align: center;
+  border: 1px solid var(--whiteSupportClr);
+  box-shadow: 0 0 1px #a8a4a4;
+}
+
+.paragraph_clr {
+  color: var(--grayishBlueClr);
+  line-height: 1.5;
+}
+
+.floatingDiv_container {
+  position: absolute;
+  width: 90vw;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  bottom: -9rem;
+  background-color: var(--whiteSupportClr);
+  border-radius: 1rem;
+  gap: 1rem;
+}
+
+#second_btn {
+  width: 12rem;
+}
+
+.floatingDiv_container h1 {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.footer_Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100vh;
+  background-color: var(--veryDarkCyanClr);
+  color: var(--whiteSupportClr);
+  margin-top: 5rem;
+  padding-top: 8rem;
+  gap: 1rem;
+}
+
+.descr_footer_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+  gap: 2rem;
+  margin-inline: 1rem;
+}
+
+#second_logo {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(151deg)
+    brightness(105%) contrast(101%);
+  width: 12rem;
+}
+
+.descr_footer_container p {
+  text-align: justify;
+}
+.descr_footer_container p img {
+  padding-inline: 1rem;
+}
+
+.contact_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+  gap: 1rem;
+  margin-inline: 2rem;
+}
+
+.icons_container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 1.5rem;
+}
+
+.copy_container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (width >= 32rem) {
+  .main_container {
+    width: 100vw;
+    height: 100%;
+  }
+  .buildCommunity_container {
+    background-image: url(images/bg-hero-desktop.svg);
+    width: 100vw;
+    height: 100vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-inline: 10rem;
+  }
+
+  .text_buildComm_container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+
+  .mockup_img_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+  }
+  .mockup_img {
+    height: 25vmax;
+    width: 35vmax;
+    object-fit: contain;
+  }
+
+  .nav_container {
+    padding-inline: 8rem;
+  }
+
+  #first_logo {
+    width: 15rem;
+  }
+  #first_logo,
+  #second_logo {
+    transition: scale 0.4s ease;
+  }
+  #first_logo,
+  #second_logo:hover {
+    scale: 1.2;
+  }
+
+  #TIF_btn {
+    width: 12rem;
+    height: 3rem;
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+  }
+  #TIF_btn a {
+    font-size: 1rem;
+  }
+
+  #TIF_btn:hover {
+    background-color: hsl(330, 4%, 90%);
+    scale: 1.2;
+  }
+  .headings {
+    font-size: 2.5rem;
+  }
+
+  #first_paragraph {
+    text-align: justify;
+    line-height: 1.8;
+    font-size: 1.2rem;
+  }
+
+  .pink_btns {
+    width: 20rem;
+    height: 3rem;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .pink_btns a {
+    font-size: 1rem;
+  }
+
+  .pink_btns:hover {
+    background-color: hsl(322, 73%, 75%);
+    scale: 1.2;
+  }
+
+  .growTogether_container,
+  .flowingConversations_container,
+  .yourUsers_container {
+    width: 100vw;
+    align-items: center;
+    padding-inline: 5rem;
+    gap: 5rem;
+  }
+
+  .growTogether_container,
+  .yourUsers_container {
+    flex-direction: row-reverse;
+  }
+  .growTogether_container img {
+    height: 35vmax;
+    width: 45vmax;
+    object-fit: contain;
+  }
+  .text_growToge_container,
+  .text_flowConver_container,
+  .text_users_container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    text-align: justify;
+  }
+  #grow_tag {
+    font-size: 2rem;
+  }
+
+  #para2_tag {
+    font-size: 1.2rem;
+  }
+
+  .flowingConversations_container {
+    flex-direction: row;
+    margin-right: 3rem;
+  }
+
+  .flowingConversations_container img {
+    height: 35vmax;
+    width: 45vmax;
+    object-fit: contain;
+  }
+
+  #flow_tag {
+    font-size: 2rem;
+  }
+  #para3_tag {
+    font-size: 1.2rem;
+  }
+
+  .yourUsers_container img {
+    height: 35vmax;
+    width: 45vmax;
+    object-fit: contain;
+  }
+
+  #yUsers_tag {
+    font-size: 2rem;
+  }
+  #para4_tag {
+    font-size: 1.2rem;
+  }
+  .floatingDiv_container {
+    width: 40vw;
+    height: 15rem;
+    gap: 2rem;
+  }
+
+  #second_btn {
+    width: 18rem;
+    height: 4rem;
+  }
+
+  .floatingDiv_container h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .footer_Container {
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 50vh;
+    margin-top: 3rem;
+    padding-top: 5rem;
+  }
+
+  .descr_footer_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+  #footer_p1 {
+    width: 20rem;
+    text-align: left;
+  }
+  #second_logo {
+    width: 15rem;
+  }
+
+  .contact_container {
+    justify-content: center;
+    align-items: start;
+    gap: 1.5rem;
+  }
+
+  .icons_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-size: 2rem;
+  }
+
+  .copy_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
